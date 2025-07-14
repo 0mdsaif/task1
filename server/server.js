@@ -3,6 +3,7 @@ import cors from 'cors';
 import mongoose from 'mongoose';
 import User from './models/User.js';
 import PointHistory from './models/PointHistory.js';
+require('dotenv').config
 
 /**
  * Express Server Configuration
@@ -14,7 +15,7 @@ app.use(cors());
 app.use(express.json());
 
 // Database Connection
-mongoose.connect('mongodb+srv://mdsaifop1:VUqHVwYK2srUbzKA@cluster0.thfkptv.mongodb.net/');
+mongoose.connect(process.env.DATABASE_URL);
 
 /**
  * Initial Data Setup
