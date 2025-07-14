@@ -302,7 +302,7 @@ function App() {
             </div>
           </div>
           <div className="mt-8 pt-8 border-t border-slate-800 text-center text-slate-400">
-            <p>© 2024 Points Master Arena. All rights reserved.</p>
+            <p>© 2025 Points Master Arena. All rights reserved.</p>
           </div>
         </div>
       </footer>
