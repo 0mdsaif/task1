@@ -56,7 +56,7 @@ function App() {
     if (!newUsername.trim()) return;
 
     try {
-      await axios.post('http://localhost:3001/users', { username: newUsername });
+      await axios.post('https://task-backend-2-wmhm.onrender.com/users', { username: newUsername });
       setNewUsername('');
       fetchUsers();
     } catch (error) {
