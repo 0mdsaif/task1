@@ -14,7 +14,7 @@ app.use(cors());
 app.use(express.json());
 
 // Database Connection
-mongoose.connect('mongodb://localhost:27017/leaderboard');
+mongoose.connect('mongodb+srv://mdsaifop1:VUqHVwYK2srUbzKA@cluster0.thfkptv.mongodb.net/');
 
 /**
  * Initial Data Setup
