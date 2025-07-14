@@ -27,7 +27,7 @@ function App() {
    */
   const fetchPointHistory = async () => {
     try {
-      const response = await axios.get('http://localhost:3001/point-history');
+      const response = await axios.get('https://task-backend-2-wmhm.onrender.com/point-history');
       setPointHistory(response.data);
     } catch (error) {
       console.error('Error fetching history:', error);
@@ -40,7 +40,7 @@ function App() {
    */
   const fetchUsers = async () => {
     try {
-      const response = await axios.get('http://localhost:3001/users');
+      const response = await axios.get('https://task-backend-2-wmhm.onrender.com/users');
       setUsers(response.data.sort((a, b) => b.points - a.points));
     } catch (error) {
       console.error('Error fetching users:', error);
@@ -73,7 +73,7 @@ function App() {
     setLoading(true);
 
     try {
-      const response = await axios.post(`http://localhost:3001/claim-points`, {
+      const response = await axios.post(`https://task-backend-2-wmhm.onrender.com/claim-points`, {
         userId: selectedUser
       });
       setLastPoints(response.data.pointsAwarded);
